@@ -226,3 +226,109 @@ Console.WriteLine(a); //11
 int a = 10;
 Console.WriteLine(++a); //11
 Console.WriteLine(a); //11
+
+
+
+
+Тема: //Конструкция логического выбора. if-else
+
+int a = 5;
+
+if (a % 2 == 0)
+{
+    Console.Write("Число чётное");
+}
+else
+{
+    Console.Write("Число нечётное");
+}
+
+
+using System; // Выведите "Попадание!", если было передано True и "Промах!" в противном случае.
+
+public class MainClass
+{
+    public static void Main()
+    {
+        string a = Console.ReadLine();
+        if (a == "True")
+        {
+            Console.WriteLine("Попадание!");
+        }
+        else
+        {
+            Console.WriteLine("Промах!");
+        }
+    }
+}
+
+
+
+Есть два выбора как можно засунуть несколько условий в один блок
+
+//1 проверяются все условия
+int a = 2;
+
+if (a == 1)
+{
+    Console.WriteLine("а равно 1");
+}
+else
+{
+    if (a == 2)
+    {
+        Console.WriteLine("a равно 2");
+    }
+    else
+    {
+        Console.WriteLine("а не равно 1 и не равно 2");
+    }
+
+}
+
+
+//2 Первый нужный = сразу ответ
+if (level == 1)
+{
+    Console.WriteLine("NPC сгенерирован");
+    Console.WriteLine("NPC сгенерирован");
+}
+else if (level == 2)
+{
+    Console.WriteLine("NPC сгенерирован");
+    Console.WriteLine("NPC сгенерирован");
+    Console.WriteLine("NPC сгенерирован");
+    Console.WriteLine("NPC сгенерирован");
+}
+else if (level == 3)
+{
+    Console.WriteLine("NPC сгенерирован");
+    Console.WriteLine("NPC сгенерирован");
+    Console.WriteLine("NPC сгенерирован");
+    Console.WriteLine("NPC сгенерирован");
+    Console.WriteLine("NPC сгенерирован");
+}
+else
+{
+    Console.WriteLine("Выбран неизвестный уровень сложности");
+}
+
+
+
+Тема: Операторы //отношения
+
+Операторы отношения:
+
+= Присваивание
+
+== Равно
+
+!= Не равно
+
+> Больше
+
+< Меньше
+
+>= Больше или равно
+
+<= Меньше или равно
